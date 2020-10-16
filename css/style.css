@@ -1,0 +1,131 @@
+/* navbar */
+.navbar{
+  position: relative;
+  z-index: 1;
+}
+
+.navbar-brand {
+    font-family:Lato;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.navbar-nav .btn{
+  background-color:#ED4C5C;
+  color:white;
+  border-color: white;
+  width: 100px;
+  height: 40px;
+}
+
+
+/*jumbotron */
+.jumbotron {
+  background-image:url(img/rsz_cloudbudget.png);
+  background-size: cover;
+  height: 782px;
+  text-align: center;
+  position: relative;
+}
+
+.jumbotron .container{
+  z-index: 1;
+  position: relative;
+}
+
+.jumbotron::after {
+  content:"";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%);
+  position: absolute;
+  bottom: 0;
+}
+
+.jumbotron .display-4{
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 50px;
+  margin-top: 257px;
+  font-weight: 700;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.jumbotron .lead {
+  color: #ffffff;
+  font-size: 24px;
+  margin-top: 39px;
+  font-weight: 500;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.jumbotron .btn {
+  margin-top: 39px;
+  background-color:white;
+  color:#ED4C5C;
+
+}
+
+/* overview */
+
+.overview-info h4{
+  margin-top: 140px;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.overview-info p{
+  margin-top: 24px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* utility */
+.tombol {
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+
+
+
+
+
+/* desktop version */
+@media (min-width: 992px) {
+
+  .navbar-brand, .nav-link{
+    color: #ffffff !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  }
+
+  svg {
+    color: #ffffff;
+    margin-right: 10px;
+  }
+
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 25px;
+    }
+
+    .nav-link:hover::after {
+        content:"";
+        display: block;
+        border: 3px solid #FFFFFF;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;  
+        margin-bottom: -11px; 
+    }
+
+    .jumbotron {
+      margin-top: -75px;
+    }
+
+    .jumbotron .display-4 {
+      font-size: 72px;
+    }
+
+}
