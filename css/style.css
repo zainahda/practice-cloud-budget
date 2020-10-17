@@ -22,7 +22,7 @@
 
 /*jumbotron */
 .jumbotron {
-  background-image:url(img/rsz_cloudbudget.png);
+  background-image:url(img/1.png);
   background-size: cover;
   height: 782px;
   text-align: center;
@@ -74,13 +74,52 @@
   margin-top: 140px;
   font-size: 36px;
   font-weight: 600;
+  text-align: center;
 }
 
 .overview-info p{
+  width: 445px;
   margin-top: 24px;
   font-size: 14px;
   font-weight: 400;
+  text-align:justify;
 }
+
+.overview-info a{
+  margin-left: -15px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #ED4C5C;
+}
+
+.overview-img img{
+  justify-content: center;
+  border-radius: 15px;
+  margin-top: 94px;
+  border-color: #C4C4C4, 100%;
+}
+
+.overview-btn {
+  justify-content: center;
+  align-content: center;
+  margin-top: 217px;
+  margin-left: 702px;
+}
+
+.overview-btn a {
+  color: #FFFFFF;
+  background-color: #ED4C5C;
+  border-radius: 50%;
+  width: 66px;
+  height: 66px;
+}
+
+/* features */
+
+.fatures-1 img{
+  
+}
+
 
 /* utility */
 .tombol {
@@ -94,6 +133,10 @@
 
 /* desktop version */
 @media (min-width: 992px) {
+
+  .navbar {
+    margin-top: 58px;
+  }
 
   .navbar-brand, .nav-link{
     color: #ffffff !important;
@@ -121,11 +164,16 @@
     }
 
     .jumbotron {
-      margin-top: -75px;
+      margin-top: -125px;
     }
 
     .jumbotron .display-4 {
       font-size: 72px;
+    }
+
+    .overview-info h4{
+      
+      text-align: left;
     }
 
 }
